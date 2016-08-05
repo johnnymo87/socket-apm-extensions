@@ -1,3 +1,5 @@
+This code demoes a small problem that [I reported to the dotnet core team.](https://github.com/dotnet/corefx/issues/10566) See that issue for a work-around solution.
+
 According to my understanding of the conversation in [this issue](https://github.com/dotnet/corefx/issues/2936), dotnet core supports APM methods for sockets, such as `BeginConnect` and `EndConnect`. I believe the support for it appears [here](https://github.com/dotnet/corefx/blob/master/src/Common/src/System/Net/Sockets/SocketAPMExtensions.cs) in the source code. I must be doing something wrong, however, because I am unable to access those methods in my code. This repo has the necessary code to reproduce the issue.
 ```bash
 docker-compose build
